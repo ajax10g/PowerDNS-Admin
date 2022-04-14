@@ -40,3 +40,6 @@ powerdnsadmin/static/generated
 .venv*
 .pytest_cache
 .DS_Store
+
+#clpham:
+docker-compose-*.yml

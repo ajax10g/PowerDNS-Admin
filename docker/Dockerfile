@@ -69,7 +69,7 @@ RUN mkdir -p /app && \
 FROM alpine:3.13
 
 ENV FLASK_APP=/app/powerdnsadmin/__init__.py \
-    USER=pda
+    USER=pdnsadminuser
 
 RUN apk add --no-cache mariadb-connector-c postgresql-client py3-gunicorn py3-psycopg2 xmlsec tzdata libcap && \
     addgroup -S ${USER} && \
